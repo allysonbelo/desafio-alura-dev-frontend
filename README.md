@@ -24,4 +24,4 @@ História
 
 ## Layout
 
-![Design Desktop](layout/layout-desktop.jpg)
+![Design Desktop](layout/layout-desktop.png)
