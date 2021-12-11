@@ -1,0 +1,49 @@
+:root {
+    --color-dark-blue: rgba(5, 29, 59, 1);
+    --color-dar-blue-op16: rgba(80, 129, 251, 0.16);
+    --color-light-clue: rgba(80, 129, 251, 1);
+    --color-white: rgb(255, 255, 255);
+    --color-white-op16: rgba(255, 255, 255, .16);
+    --color-white-op64: rgba(255, 255, 255, 0.64);
+
+    --font-inter: 'Inter', sans-serif;
+    --font-roboto-mono: 'Roboto Mono', monospace;
+}
+
+.container {
+    background-color: var(--color-dark-blue);
+    display: grid;
+    font-family: var(--font-inter);
+    grid-template-areas:
+        "header"
+        "codigo"
+        "form";
+    grid-template-rows: 56px 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 16px;
+    row-gap: 40px;
+    width: 375px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "aside-menu codigo form";
+        max-width: 1440px;
+        padding: 32px;
+        width: 100%;
+    }
+
+    .aside-menu {
+        background-color: orange;
+        display: block;
+    }
+}

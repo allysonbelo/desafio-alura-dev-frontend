@@ -1,0 +1,15 @@
+.aside-menu {
+    display: none;
+}
+
+@media (min-width: 768px) { /*Tablet*/
+
+}
+
+@media (min-width: 1200px) { /*Desktop*/
+
+    .aside-menu {
+        background-color: orange;
+        display: block;
+    }
+}

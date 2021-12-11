@@ -1,0 +1,12 @@
+.header {
+    background-color: tomato;
+    grid-area: header;
+}
+
+@media (min-width: 768px) { /*Tablet*/
+
+}
+
+@media (min-width: 1200px) { /*Desktop*/
+
+}

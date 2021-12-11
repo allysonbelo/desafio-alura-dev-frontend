@@ -1,0 +1,12 @@
+.codigo {
+    background-color: purple;
+    grid-area: codigo;
+}
+
+@media (min-width: 768px) { /*Tablet*/
+
+}
+
+@media (min-width: 1200px) { /*Desktop*/
+
+}

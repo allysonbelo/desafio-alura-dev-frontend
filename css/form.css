@@ -1,0 +1,12 @@
+.form {
+    background-color: orange;
+    grid-area: form;
+}
+
+@media (min-width: 768px) { /*Tablet*/
+
+}
+
+@media (min-width: 1200px) { /*Desktop*/
+
+}
