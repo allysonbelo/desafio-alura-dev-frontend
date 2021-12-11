@@ -37,6 +37,7 @@
         grid-template-areas:
             "header header header"
             "aside-menu codigo form";
+        grid-template-rows: 56px 1fr;
         max-width: 1440px;
         padding: 32px;
         width: 100%;

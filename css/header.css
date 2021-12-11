@@ -1,12 +1,121 @@
 .header {
-    background-color: tomato;
+    align-items: center;
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-@media (min-width: 768px) { /*Tablet*/
-
+.header__logo {
+    width: 145px;
+    height: 34.05px;
+    flex-grow: 1;
 }
 
-@media (min-width: 1200px) { /*Desktop*/
+.header__form {
+    display: none;
+}
+
+.header__search {
+    align-items: center;
+    color: var(--color-white);
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+}
+
+.header__search .fas {
+    cursor: pointer;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.header__menu {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+    row-gap: 4px;
+}
+
+/*linhas para o menu hamburguer*/
+.line {
+    background-color: white;
+    border-radius: 8px;
+    height: 3px;
+    width: 20px;
+}
+
+.profile{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    /*Tablet*/
+
+    .header__logo {
+        width: 145px;
+        height: 34.05px;
+        flex-grow: 0;
+    }
+
+    .header__form {
+        display: block;
+        width: 431px;
+        height: 56px;
+    }
+
+    .header__form>input {
+        background-color: var(--color-white-op16);
+        border: none;
+        border-radius: 8px;
+        /*alterar a cor do cursor piscando dentro do input*/
+        caret-color: var(--color-white);
+        height: 100%;
+        padding-left: 16px;
+        width: 100%;
+        color: var(--color-white-op64);
+    }
+
+    .header__form>input:focus {
+        outline: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*Desktop*/
+    .header__menu{
+        display: none;
+    }
+
+    .header__form{
+        width: 752px;
+    }
+
+    .profile{
+        align-items: center;
+        display: flex;
+        height: 56px;
+        justify-content: space-evenly;
+        width: 106px;
+    }
+
+    .profile__img{
+        border-radius: 50px;
+    }
+
+    .profile__nome{
+        color: var(--color-white);
+    }
 
 }
