@@ -68,12 +68,12 @@
 
 @media (min-width: 768px) { /*Tablet*/
     .codigo{
-        height: 366px;
         width: 704px;
     }
-
+    
     .codigo__wrapper {
-        height: 100%;
+        height: 366px;
+        /* height: 100%; */
     }
 }
 

@@ -2,6 +2,7 @@
     --color-dark-blue: rgba(5, 29, 59, 1);
     --color-dar-blue-op16: rgba(80, 129, 251, 0.16);
     --color-light-blue: rgba(107, 209, 255, 1);
+    --color-blue: rgba(80, 129, 251, 1);
     --color-white: rgb(255, 255, 255);
     --color-white-op16: rgba(255, 255, 255, .16);
     --color-white-op64: rgba(255, 255, 255, 0.64);
@@ -22,7 +23,7 @@
     justify-content: center;
     margin: 0 auto;
     padding: 16px;
-    row-gap: 40px;
+    gap: 40px;
     width: 375px;
 }
 
