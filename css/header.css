@@ -3,7 +3,7 @@
     grid-area: header;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    width: 343px;
 }
 
 .header__logo {
@@ -58,7 +58,9 @@
 
 @media (min-width: 768px) {
     /*Tablet*/
-
+    .header{
+        width: 704px;
+    }
     .header__logo {
         width: 145px;
         height: 34.05px;
@@ -94,12 +96,22 @@
 
 @media (min-width: 1200px) {
     /*Desktop*/
+    .header{
+        width: 1376px;
+        justify-content: space-between;
+    }
+
+    .header__logo{
+        background-color: red;
+    }
+
     .header__menu{
         display: none;
     }
 
     .header__form{
         width: 752px;
+        margin-left: -40px;
     }
 
     .profile{
