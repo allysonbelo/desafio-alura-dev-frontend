@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.header__menu {
+/* .header__menu {
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -42,6 +42,16 @@
     justify-content: center;
     width: 48px;
     row-gap: 4px;
+} */
+
+.header__menu {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    width: 48px;
 }
 
 /*linhas para o menu hamburguer*/
@@ -49,7 +59,35 @@
     background-color: white;
     border-radius: 8px;
     height: 3px;
-    width: 20px;
+    position: absolute;
+    transition: 0.5s;
+    width: 25px;
+}
+
+.line:nth-child(1){
+    left: 12px;
+    transform: translateY(-10px);
+    width: 15px;
+}
+
+.line:nth-child(2){
+    left: 12px;
+    transform: translateY(10px);
+    width: 10px;
+}
+
+.active .line:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+    width: 25px;
+}
+
+.active .line:nth-child(2){
+    transform: translateY(0) rotate(315deg);
+    width: 25px;
+}
+
+.active .line:nth-child(3){
+    transform: translateX(40px);
 }
 
 .profile{
