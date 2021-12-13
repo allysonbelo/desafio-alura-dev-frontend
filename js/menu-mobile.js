@@ -1,5 +1,6 @@
 const menu = document.querySelector(".header__menu")
+const container = document.querySelector(".container")
 
 menu.addEventListener("click", () =>{
-    menu.classList.toggle("active")
+    container.classList.toggle("active")
 })

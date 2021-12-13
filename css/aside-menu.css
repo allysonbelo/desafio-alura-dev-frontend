@@ -1,54 +1,123 @@
 .aside-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 254px;
+    position: absolute;
+    padding: 24px;
+    top: 77px;
+    right: -254px;
+    background-color: rgba(45, 65, 91, 1);
+    border-radius: 8px;
+    min-height: 100vh;
+    transition: .3s;
+    transform: scaleX(0);
+}
+
+.active .aside-menu{
+    transform: scaleX(1);
+    right: 0;
+}
+
+.menu__title {
     display: none;
 }
 
-@media (min-width: 768px) { /*Tablet*/
-
+.menu__item {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
 }
 
-@media (min-width: 1200px) { /*Desktop*/
+.menu__item:nth-child(3){
+    border-bottom: 1px solid var(--color-white-op08) ;
+    padding-bottom: 24px;
+}
+
+.menu__item i {
+    align-items: center;
+    background-color: var(--color-dar-blue-op16);
+    border-radius: 16px;
+    color: var(--color-white-op64);
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+}
+
+.item__title {
+    color: var(--color-white-op64);
+}
+
+.selected .item__title,
+.selected i {
+    color: white;
+}
+
+.selected i {
+    background-color: var(--color-blue);
+}
+
+.aside__profile{
+    align-items: center;
+    display: flex;
+    height: 56px;
+    justify-content: flex-start;
+    width: 206px;
+    column-gap: 8px;
+}
+
+.profile__img{
+    border-radius: 50px;
+    padding-left: 12px;
+}
+
+.profile__nome{
+    color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+    /*Tablet*/
+    .aside-menu{
+        top: 100px;
+        right: -500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*Desktop*/
 
     .aside-menu {
         display: flex;
-        flex-direction: column;
-        row-gap: 16px;
+        background-color: inherit;
+        padding: 0;
+        position: static;
         width: 272px;
     }
 
-    .menu__title{
+    .active .aside-menu{
+        transform: none
+    }
+
+    .aside-menu::after {
+        content: "";
+        border-bottom: none;
+    }
+
+    .menu__title {
         color: var(--color-white);
+        display: block;
         text-transform: uppercase;
         line-height: 18px;
         letter-spacing: 0.4em;
     }
 
-    .menu__item{
-        display: flex;
-        align-items: center;
-        column-gap: 16px;
-        cursor: pointer;
+    .aside__profile{
+        display: none;
     }
 
-    .menu__item i{
-        align-items: center;
-        background-color: var(--color-dar-blue-op16);
-        border-radius: 16px;
-        color: var(--color-white-op64);
-        display: flex;
-        height: 48px;
-        justify-content: center;
-        width: 48px;
-    }
-
-    .item__title{
-        color: var(--color-white-op64);
-    }
-
-    .active .item__title, .active i{
-        color: white;
-    }
-
-    .active i{
-        background-color: var(--color-blue);
+    .menu__item:nth-child(3){
+        border-bottom: none ;
     }
 }
