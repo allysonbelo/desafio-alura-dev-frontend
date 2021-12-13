@@ -24,7 +24,7 @@
     margin: 0 auto;
     padding: 16px;
     gap: 40px;
-    width: 375px;
+    width: 100%; /*testando responsividade*/
 }
 
 @media (min-width: 768px) {

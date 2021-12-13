@@ -1,6 +1,6 @@
 .codigo{
     grid-area: codigo;
-    width: 343px;
+    width: 100%; /*testando responsividade*/
 }
 
 .codigo__wrapper {
