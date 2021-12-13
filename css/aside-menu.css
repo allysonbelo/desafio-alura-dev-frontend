@@ -9,7 +9,46 @@
 @media (min-width: 1200px) { /*Desktop*/
 
     .aside-menu {
-        background-color: orange;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        width: 272px;
+    }
+
+    .menu__title{
+        color: var(--color-white);
+        text-transform: uppercase;
+        line-height: 18px;
+        letter-spacing: 0.4em;
+    }
+
+    .menu__item{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        cursor: pointer;
+    }
+
+    .menu__item i{
+        align-items: center;
+        background-color: var(--color-dar-blue-op16);
+        border-radius: 16px;
+        color: var(--color-white-op64);
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        width: 48px;
+    }
+
+    .item__title{
+        color: var(--color-white-op64);
+    }
+
+    .active .item__title, .active i{
+        color: white;
+    }
+
+    .active i{
+        background-color: var(--color-blue);
     }
 }
