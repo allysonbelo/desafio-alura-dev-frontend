@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside-menu.css">
+    <link rel="stylesheet" href="css/codigo.css">
+    <link rel="stylesheet" href="css/form.css">
+
+
+</head>
+
+<body class="container">
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="images/Logo.svg" alt="Logo Alura Dev">
+            </a>
+        </div>
+        <form class="header__form">
+            <input type="search" placeholder="Busque por algo">
+        </form>
+        <div class="header__search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="header__menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <div class="profile">
+            <img class="profile__img" src="images/Photo.png" alt="Imagem perfil">
+            <span class="profile__nome">Harry</span>
+        </div>
+    </header>
+
+    <div class="aside-menu">
+        <span class="menu__title">Menu</span>
+        <div class="menu__item selected">
+            <i class="fas fa-code"></i>
+            <span class="item__title">Editor de código</span>
+        </div>
+        <div class="menu__item ">
+            <i class="fas fa-users"></i>
+            <span class="item__title">Editor de código</span>
+        </div>
+
+        <div class="aside__profile">
+            <img class="profile__img" src="images/Photo.png" alt="Imagem perfil">
+            <span class="profile__nome">Harry</span>
+        </div>
+    </div>
+
+    <main class="codigo">
+        <div class="codigo__wrapper">
+            <div class="codigo__content">
+                <div class="circles">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <textarea class="area-codigo" name="" id="" cols="30" rows="10" spellcheck="false">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti perspiciatis dolore totam atque alias facilis repellat quia non at delectus, rem ullam nisi assumenda veritatis. Distinctio eos blanditiis quasi repellat.
+                    lorem50
+                </textarea>
+            </div>
+        </div>
+
+        <h2>Title</h2>
+        <p>Breve descrição</p>
+    </main>
+
+    <script src="js/menu-mobile.js"></script>
+</body>
+
+</html>

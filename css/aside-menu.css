@@ -1,22 +1,22 @@
 .aside-menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    width: 254px;
-    position: absolute;
-    padding: 24px;
-    top: 77px;
-    right: -254px;
     background-color: rgba(45, 65, 91, 1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    padding: 24px;
+    position: absolute;
+    right: -254px;
+    row-gap: 16px;
+    top: 77px;
     transition: .3s;
     transform: scaleX(0);
+    width: 254px;
 }
 
 .active .aside-menu{
-    transform: scaleX(1);
     right: 0;
+    transform: scaleX(1);
 }
 
 .menu__title {
@@ -24,10 +24,10 @@
 }
 
 .menu__item {
-    display: flex;
     align-items: center;
     column-gap: 16px;
     cursor: pointer;
+    display: flex;
 }
 
 .menu__item:nth-child(3){
@@ -61,11 +61,11 @@
 
 .aside__profile{
     align-items: center;
+    column-gap: 8px;
     display: flex;
     height: 56px;
     justify-content: flex-start;
     width: 206px;
-    column-gap: 8px;
 }
 
 .profile__img{
@@ -89,10 +89,12 @@
     /*Desktop*/
 
     .aside-menu {
-        display: flex;
         background-color: inherit;
+        display: flex;
         padding: 0;
         position: static;
+        transform: scaleX(1);
+        transition: none;
         width: 272px;
     }
 
