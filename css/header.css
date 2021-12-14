@@ -100,6 +100,10 @@
         height: 56px;
     }
 
+    .header__form input:hover{
+        background-color: var(--color-white-op24);
+    }
+
     .header__form>input {
         background-color: var(--color-white-op16);
         border: none;

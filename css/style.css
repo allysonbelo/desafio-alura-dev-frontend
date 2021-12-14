@@ -5,6 +5,7 @@
     --color-blue: rgba(80, 129, 251, 1);
     --color-white: rgb(255, 255, 255);
     --color-white-op16: rgba(255, 255, 255, .16);
+    --color-white-op24: rgba(255, 255, 255, .24);
     --color-white-op64: rgba(255, 255, 255, 0.64);
     --color-white-op08: rgba(255, 255, 255, 0.08);
 
