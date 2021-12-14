@@ -46,6 +46,10 @@
     width: 48px;
 }
 
+.menu__item a{
+    text-decoration: none;
+}
+
 .item__title {
     color: var(--color-white-op64);
 }
