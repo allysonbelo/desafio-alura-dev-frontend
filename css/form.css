@@ -65,6 +65,11 @@
 .form__fieldset .wrapper__select:hover select{
     background-color: transparent;
 }
+
+option{
+    background-color: var(--color-white-op24);
+    color: var(--color-dark-blue);
+}
  
 .form__fieldset input[type="color"] {
     width: 100%;
