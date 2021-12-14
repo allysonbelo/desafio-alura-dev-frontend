@@ -7,13 +7,20 @@
         "codigo"
         "formulario";
     gap: 40px;
-    grid-template-rows: 56px 1fr 1fr;
+    grid-template-rows: 56px 1fr auto;
     justify-content: center;
     margin: 0 auto;
     padding: 16px;
     width: 100%;
 }
 
+.codigo {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
 
 .main__content {
     background-color: var(--color-black-16);
@@ -77,6 +84,10 @@
         max-width: 768px;
         position: relative;
     }
+
+    .codigo__wrapper{
+        max-width: 704px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -93,18 +104,7 @@
     }
 
     .codigo {
-        align-content: flex-start;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
         max-width: 1064px;
-        width: 100%;
-    }
-
-    .codigo__wrapper {
-        height: 288px;
-        max-width: 1040px;
-        width: 520px;
     }
 
     .main__content {
@@ -113,6 +113,11 @@
         width: 520px;
     }
 
+    .codigo__wrapper {
+        height: 288px;
+        max-width: 1040px;
+        width: 100%;
+    }
 
     .social .aside__profile {
         display: flex;
