@@ -13,4 +13,3 @@ else if(linkComunidade  == document.URL){
     divEditorCodigo.classList.remove("selected")
     divComunidade.classList.add("selected")
 }
-5
