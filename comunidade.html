@@ -10,7 +10,8 @@
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="css/aside-menu.css">
     <link rel="stylesheet" href="css/codigo.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style-comunidade.css">
 
 
 </head>
@@ -72,22 +74,147 @@
     </div>
 
     <main class="codigo">
-        <div class="codigo__wrapper">
-            <div class="codigo__content">
-                <div class="circles">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+        <div class="main__content">
+            <div class="codigo__wrapper">
+                <div class="codigo__content">
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <code class="area-codigo">
+                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                        const unfold = (f, seed) => {
+                        const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                        }
+                        return go(f, seed, [])
+                        }
+                    </code>
                 </div>
-                <textarea class="area-codigo" name="" id="" cols="30" rows="10" spellcheck="false">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti perspiciatis dolore totam atque alias facilis repellat quia non at delectus, rem ullam nisi assumenda veritatis. Distinctio eos blanditiis quasi repellat.
-                    lorem50
-                </textarea>
+            </div>
+            <div class="wrapper__social">
+                <div class="descricao">
+                    <h2 class="descricao__title">Título do projeto</h2>
+                    <p class="descricao__text">Essa é a descrição do meu projeto</p>
+                </div>
+                <div class="social">
+                    <div class="social__icons">
+                        <i class="fas fa-comment">
+                            <span>9</span>
+                        </i>
+                        <i class="fas fa-heart">
+                            <span>9</span>
+                        </i>
+                    </div>
+
+                    <div class="aside__profile">
+                        <img class="profile__img" src="images/Photo.png" alt="Imagem perfil">
+                        <span class="profile__nome">@Harry</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h2>Title</h2>
-        <p>Breve descrição</p>
+        <div class="main__content">
+            <div class="codigo__wrapper">
+                <div class="codigo__content">
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <code class="area-codigo">
+                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                        const unfold = (f, seed) => {
+                        const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                        }
+                        return go(f, seed, [])
+                        }
+                    </code>
+                </div>
+            </div>
+            <div class="wrapper__social">
+                <div class="descricao">
+                    <h2 class="descricao__title">Título do projeto</h2>
+                    <p class="descricao__text">Essa é a descrição do meu projeto</p>
+                </div>
+                <div class="social">
+                    <div class="social__icons">
+                        <i class="fas fa-comment">
+                            <span>9</span>
+                        </i>
+                        <i class="fas fa-heart">
+                            <span>9</span>
+                        </i>
+                    </div>
+
+                    <div class="aside__profile">
+                        <img class="profile__img" src="images/Photo.png" alt="Imagem perfil">
+                        <span class="profile__nome">@Harry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__content">
+            <div class="codigo__wrapper">
+                <div class="codigo__content">
+                    <div class="circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <code class="area-codigo">
+                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                        const unfold = (f, seed) => {
+                        const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                        }
+                        return go(f, seed, [])
+                        }
+                    </code>
+                </div>
+            </div>
+            <div class="wrapper__social">
+                <div class="descricao">
+                    <h2 class="descricao__title">Título do projeto</h2>
+                    <p class="descricao__text">Essa é a descrição do meu projeto</p>
+                </div>
+                <div class="social">
+                    <div class="social__icons">
+                        <i class="fas fa-comment">
+                            <span>9</span>
+                        </i>
+                        <i class="fas fa-heart">
+                            <span>9</span>
+                        </i>
+                    </div>
+
+                    <div class="aside__profile">
+                        <img class="profile__img" src="images/Photo.png" alt="Imagem perfil">
+                        <span class="profile__nome">@Harry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <script src="js/menu-mobile.js"></script>
