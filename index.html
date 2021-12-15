@@ -16,6 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dracula.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/aside-menu.css">
@@ -79,10 +80,20 @@
                     <div class="circle"></div>
                     <div class="circle"></div>
                 </div>
-                <textarea class="area-codigo" name="" id="" cols="30" rows="10" spellcheck="false">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti perspiciatis dolore totam atque alias facilis repellat quia non at delectus, rem ullam nisi assumenda veritatis. Distinctio eos blanditiis quasi repellat.
-                    lorem50
-                </textarea>
+                <!-- <div class="wrapper-codigo">
+                    <pre>
+                        <code class="area-codigo" contenteditable="true" spellcheck="false">
+                            function teste(){}
+                        </code>
+                    </pre>
+                </div> -->
+                <div class="wrapper-code">
+                    <code class="area-codigo hljs" contenteditable="true" aria-label="Editor de código" >
+                        function bemVindo(){
+                            console.log("Olá visitante!")
+                        }
+                    </code>
+                </div>
             </div>
         </div>
 
@@ -100,7 +111,7 @@
             <fieldset class="form__fieldset">
                 <legend>Personalização</legend>
                 <div class="wrapper__select">
-                    <select id="">
+                    <select id="linguagem">
                         <option value="JavaScript">JavaScript</option>
                         <option value="Html">Html</option>
                         <option value="Css">Css</option>
@@ -116,6 +127,7 @@
     <script src="js/menu-mobile.js"></script>
     <script src="js/ativar-link.js"></script>
     <script src="js/alterar-cor-codigo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 
 </html>

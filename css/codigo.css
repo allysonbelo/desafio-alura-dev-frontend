@@ -19,6 +19,29 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+
+
+}
+
+.area-codigo{
+    background-color: inherit;
+    border: none;
+    color: var(--color-white);
+    font-family: var(--font-roboto-mono);
+    font-size: 14px;
+    height: 100%;
+    line-height: 18.46px;
+    padding: 0 !important;
+    resize: none;
+    width: 100%;   
+}
+
+.wrapper-code{
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 2px;
+    white-space: pre-line; 
 }
 
 .circles{
@@ -46,16 +69,6 @@
     background-color: rgba(39, 201, 63, 1);
 }
 
-.area-codigo{
-    background-color: inherit;
-    border: none;
-    color: var(--color-white);
-    font-family: var(--font-roboto-mono);
-    resize: none;
-    height: 100%;
-    width: 100%;
-}
-
 .codigo__button{
     background-color: var(--color-dar-blue-op16);
     border: none;
@@ -63,8 +76,8 @@
     color: var(--color-white);
     cursor: pointer;
     height: 56px;
-    width: 100%;
     margin-top: 32px;
+    width: 100%;
 }
 
 @media (min-width: 768px) { /*Tablet*/

@@ -1,7 +1,16 @@
-const corDeFundo = document.querySelector("#cor-fundo")
-const elementoFundo = document.querySelector(".codigo__wrapper")
+const linguagem = document.querySelector("#linguagem")
+const areaDoCodigo = document.querySelector(".wrapper-code")
+const botao = document.querySelector(".codigo__button")
 
-corDeFundo.addEventListener("change", function(){
-    const valorCor = corDeFundo.value
-    elementoFundo.style.backgroundColor = valorCor
+window.onload = aplicaHighlight
+
+function aplicaHighlight(){
+    const codigo = areaDoCodigo.innerText
+    areaDoCodigo.innerHTML = `<code class="area-codigo hljs ${linguagem.value}" contenteditable="true" aria-label="Editor de código" spellcheck="false"></code>`
+    areaDoCodigo.querySelector("code").textContent = codigo
+    hljs.highlightElement(areaDoCodigo.querySelector("code"))
+}
+
+botao.addEventListener("click", ()=>{
+    aplicaHighlight()
 })
