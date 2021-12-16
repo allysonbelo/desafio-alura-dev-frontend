@@ -27,6 +27,7 @@
     background-color: inherit;
     border: none;
     color: var(--color-white);
+    display: block;
     font-family: var(--font-roboto-mono);
     font-size: 14px;
     height: 100%;
